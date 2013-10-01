@@ -36,6 +36,11 @@ module Simon
       puts "Hello #{GLOBAL_OPTIONS[:simon_user]}. What can I do for you?"
     end
 
+    desc "brain", "Create a brain"
+    def brain
+      puts Simon::Brain.create(Time.now.to_i)
+    end
+
 
   end
 end
